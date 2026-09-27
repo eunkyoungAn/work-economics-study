@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>일의 세계 경제학 · 오픈북 학습실</title>
+<meta name="description" content="제3·10·11장 학습 개요, 24개 핵심 주제, 상세 모범답안과 원문 페이지를 함께 보는 오픈북 학습노트">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">학습 내용으로 이동</a>
+<header class="topbar">
+ <a class="brand" href="#topic-1"><span class="brand-icon" aria-hidden="true">W</span><span>일의 세계 경제학<small>OPEN-BOOK STUDY · 원문 대조 보완판</small></span></a>
+ <div class="top-actions"><button id="connect">원문 PDF 연결</button><a class="primary" href="study-notes.pdf" target="_blank" rel="noopener">학습노트 PDF ↗</a></div>
+</header>
+<div class="app-layout">
+<aside class="sidebar" aria-label="학습 주제">
+ <div class="side-title"><span>학습 목차</span><span class="pill">24개 주제</span></div>
+ <label class="sr-only" for="search">주제·개념 검색</label><input id="search" type="search" placeholder="개념·질문 검색" autocomplete="off">
+ <div class="progress-head"><span id="progress-text">숙지 0 / 24</span><button class="text-button" id="weak-filter" aria-pressed="false">복습할 주제만</button></div>
+ <progress id="progress" max="24" value="0" aria-label="숙지한 주제 수"></progress>
+ <nav id="topics"></nav>
+ <div class="side-footer">조우현 · 제2판 발췌본<br>제3장 · 제10장 · 제11장</div>
+</aside>
+<main id="main" tabindex="-1">
+ <div class="context-row"><span id="source-status">원문 p.와 PDF 순서를 함께 표시합니다.</span><span id="saved" role="status" aria-live="polite">이 기기에 자동 저장</span></div>
+ <nav class="view-tabs" aria-label="학습 화면">
+  <button data-view="study" aria-pressed="true">주제 학습</button><button data-view="map" aria-pressed="false">학습 개요</button><button data-view="exam" aria-pressed="false">미니시험</button><button data-view="index" aria-pressed="false">공식·발췌 색인</button><button data-view="review" aria-pressed="false">내 필기·복습</button>
+ </nav>
+ <p class="review-policy">48개 문답을 원문과 대조해 보완했습니다. 수치·설명은 PDF 원문을 우선하며 의심되는 불일치는 ‘확인 필요’로 표시합니다. <a href="answer-review.md" download>검토표 내려받기</a></p><section id="view-study"></section><section id="view-map" hidden></section><section id="view-exam" hidden></section><section id="view-index" hidden></section><section id="view-review" hidden></section>
+ <footer class="main-footer">
+  <p>원문을 재서술한 학습자료입니다. 모범답안은 실제 기출 정답이 아니며, 당시 통계·정책 주장은 책의 시점과 가정을 기준으로 읽습니다.</p>
+  <div class="footer-actions"><button id="backup">내 필기 백업</button><button id="restore">백업 불러오기</button><button id="export-text">필기 텍스트 저장</button><a href="study-notes.md" download>전체 학습노트 저장</a></div>
+  <p>필기·복습 기록은 현재 브라우저에 저장됩니다. 기기 간 자동 동기화는 되지 않습니다. 백업 불러오기는 기존 기록과 합치며, 같은 항목은 백업 내용으로 바꿉니다. 불러오기 전에 현재 기록을 자동으로 내려받습니다.</p>
+ </footer>
+</main>
+</div>
+<input id="source-file" type="file" accept="application/pdf,.pdf" hidden><input id="backup-file" type="file" accept="application/json,.json" hidden>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>

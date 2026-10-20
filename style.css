@@ -7,3 +7,9 @@
 @media print{.sidebar,.topbar,.view-tabs,.context-row,.main-footer,.prev-next,.rating,.note-card,#toast{display:none}.app-layout{display:block}main{padding:0}.study-grid{display:block}.qa{break-inside:avoid}.content-card{border:0;padding:0}.qa textarea{display:none}.qa details{display:block}body{background:white}}
 
 .review-policy{font-size:.85rem;color:var(--muted);background:var(--pale);border-radius:8px;padding:13px 16px;margin-bottom:24px}.review-policy a{color:var(--teal)}
+
+/* 2026-10-20: topic 1 company-practice supplement */
+.company-supplement{margin:32px 0;padding:26px;border:1px solid var(--line);border-radius:14px;background:#fff;scroll-margin-top:24px;overflow-wrap:anywhere}
+.company-supplement h2{font-size:1.5rem;margin:8px 0 16px}.company-supplement h3{font-size:1.15rem;margin:28px 0 12px}.company-supplement h4{font-size:1.02rem;margin:0 0 12px}.company-supplement p{line-height:1.85}
+.scope-note{padding:14px 16px;background:var(--pale);border-left:3px solid var(--teal);font-size:.9rem}.practice-item{border-top:1px solid var(--line);padding:20px 0}.theory-link{color:var(--muted)}.external-source{color:var(--teal);font-size:.875rem}.company-supplement td{min-width:150px}.company-supplement .summary{margin-top:24px}
+@media(max-width:700px){.company-supplement{padding:18px 14px}.company-supplement h2{font-size:1.3rem}}
